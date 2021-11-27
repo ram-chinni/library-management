@@ -1,0 +1,90 @@
+<form name="registerForm" ng-submit="validation()" method="post">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="firstname" class="text-white">Firstname</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="First Name"
+        name="firstname"
+        ng-model="firstname"
+        autocomplete="off"
+        ng-required="true"
+      />
+      <small
+        class="text-warning"
+        ng-show="registerForm.firstname.$invalid && registerForm.firstname.$touched"
+        >Enter Your First name</small
+      >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="lastname" class="text-white">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Last Name"
+        name="lastname"
+        ng-model="lastname"
+        autocomplete="off"
+        ng-required="true"
+      />
+      <small
+        class="text-warning"
+        ng-show="registerForm.lastname.$invalid && registerForm.lastname.$touched"
+        >Enter Your Lastname</small
+      >
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="email" class="text-white">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        placeholder="Email"
+        ng-model="email"
+        autocomplete="off"
+        ng-required="true"
+      />
+      <small
+        class="text-warning"
+        ng-show="registerForm.email.$invalid && registerForm.email.$touched"
+        >Enter Your Email</small
+      >
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="password" class="text-white">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        placeholder="password"
+        ng-model="password"
+        name="password"
+        autocomplete="off"
+        ng-required="true"
+      />
+      <small
+        class="text-warning"
+        ng-show="registerForm.password.$invalid && registerForm.password.$touched"
+        >Enter Your password
+      </small>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-lg-7">
+      <input
+        type="submit"
+        class="btn btn-warning"
+        ng
+        value="Sign Up"
+        ng-disabled="registerForm.$invalid"
+      />
+    </div>
+  </div>
+  <p class="text-white">
+    User If Exists?<a class="text-warning" href="#/login"> Login</a>
+  </p>
+</form>

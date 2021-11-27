@@ -1,0 +1,162 @@
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Staatliches", cursive;
+}
+
+h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+label {
+  font-family: "Roboto Slab", serif;
+}
+
+input {
+  font-family: "Roboto Slab", serif;
+}
+
+th {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+td {
+  font-family: "Roboto Mono", monospace;
+}
+
+.navbar-brand {
+  font-family: "Staatliches", cursive;
+}
+
+.nav-item .nav-link {
+  font-family: "Zilla Slab", serif;
+  font-size: 20px;
+  margin-left: 60px;
+  font-weight: 500;
+}
+
+.jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/Home-img.jpg");
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+#para-1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  text-align: justify;
+}
+
+#homeTitle {
+  margin-bottom: 10px;
+}
+
+#homeMain {
+  margin-bottom: 80px;
+}
+
+#homeDescription {
+  font-size: 16px;
+  text-align: justify;
+}
+
+#stickyFooter {
+  flex-shrink: none;
+}
+
+#stickyFooter h4 {
+  text-transform: capitalize;
+}
+
+#followIcons li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+#followIcons .fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+}
+
+#footerText {
+  margin-bottom: 8px;
+}
+
+.fa-facebook {
+  color: #4867aa;
+}
+
+.fa-twitter {
+  color: #33aae7;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+#serviceDetails {
+  margin-bottom: 20px;
+  animation: fadein 8s;
+}
+
+#serviceDetails .card-body {
+  text-align: left;
+}
+
+#libraryLogin {
+  background: #113537;
+  border-radius: 30px;
+  box-shadow: 12px 12px 22px grey;
+}
+
+#loginImage {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#availableBooks {
+  box-shadow: 12px 12px 22px grey;
+}
+
+#issuedBooks {
+  box-shadow: 12px 12px 22px grey;
+}
+
+#returnBooks {
+  box-shadow: 12px 12px 22px grey;
+}
+/*# sourceMappingURL=style.css.map */

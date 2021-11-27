@@ -1,0 +1,127 @@
+<div>
+    <div class="row"
+        ng-hide="javaChecked || internetChecked || businessChecked || webChecked || softwareChecked || microsoftChecked || otherChecked">
+        <div class=" col-md-4" ng-repeat="book in books">
+            <div class="card w-80 h-70">
+                <img class="card-img-top" ng-src="{{book.thumbnailUrl}}" alt="{{book.title}}">
+                <div class="card-body">
+                    <p class="card-title text-primary font-weight-bold text-capitalize">
+                        {{book.title}}
+                    </p>
+                    <span class="badge badge-pill badge-danger">{{book.categories[0]}}</span>
+                    <span class="badge badge-pill badge-dark">{{book.categories[1]}}</span>
+                    <p class="card-text lead">{{book.authors[0]}}</p>
+                    <button href="#" class="btn btn-warning rounded-circle" ng-click="addBook(book)"><i
+                            class="fa fa-plus"></i></button>
+                    <!-- <button href="#" class="btn btn-success rounded-circle" ng-show="added"><i class="fa fa-check"
+                    aria-hidden="true"></i></button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="javaChecked">
+        <div class="col-md-4" ng-repeat="j in java">
+            <div class="card w-80 h-70">
+                <img class="card-img-top" ng-src="{{j.thumbnailUrl}}" alt="{{j.title}}">
+                <div class="card-body">
+                    <p class="card-title text-primary font-weight-bold text-capitalize">{{j.title}}</p>
+                    <span class="badge badge-pill badge-danger">{{j.categories[0]}}</span>
+                    <span class="badge badge-pill badge-dark">{{j.categories[1]}}</span>
+                    <p class="card-text lead">{{j.authors[0]}}</p>
+                    <button href="#" class="btn btn-warning rounded-circle" ng-click="addBook(j)"><i
+                            class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="internetChecked">
+        <div class="col-md-4" ng-repeat="i in internet">
+            <div class="card w-80 h-70">
+                <img class="card-img-top" ng-src="{{i.thumbnailUrl}}" alt="{{i.title}}">
+                <div class="card-body">
+                    <p class="card-title text-primary font-weight-bold text-capitalize">{{i.title}}</p>
+                    <span class="badge badge-pill badge-danger">{{i.categories[0]}}</span>
+                    <span class="badge badge-pill badge-dark">{{i.categories[1]}}</span>
+                    <p class="card-text lead">{{i.authors[0]}}</p>
+                    <button href="#" class="btn btn-warning rounded-circle" ng-click="addBook(i)"><i
+                            class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="businessChecked">
+        <div class="col-md-4" ng-repeat="b in business">
+            <div class="card w-80 h-70">
+                <img class="card-img-top" ng-src="{{b.thumbnailUrl}}" alt="{{b.title}}">
+                <div class="card-body">
+                    <p class="card-title text-primary font-weight-bold text-capitalize">{{b.title}}</p>
+                    <span class="badge badge-pill badge-danger">{{b.categories[0]}}</span>
+                    <span class="badge badge-pill badge-dark">{{b.categories[1]}}</span>
+                    <p class="card-text lead">{{b.authors[0]}}</p>
+                    <button href="#" class="btn btn-warning rounded-circle" ng-click="addBook(b)"><i
+                            class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="webChecked">
+        <div class="col-md-4" ng-repeat="w in web">
+            <div class="card w-80 h-70">
+                <img class="card-img-top" ng-src="{{w.thumbnailUrl}}" alt="{{w.title}}">
+                <div class="card-body">
+                    <p class="card-title text-primary font-weight-bold text-capitalize">{{w.title}}</p>
+                    <span class="badge badge-pill badge-danger">{{w.categories[0]}}</span>
+                    <span class="badge badge-pill badge-dark">{{w.categories[1]}}</span>
+                    <p class="card-text lead">{{w.authors[0]}}</p>
+                    <button href="#" class="btn btn-warning rounded-circle" ng-click="addBook(w)"><i
+                            class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="softwareChecked">
+        <div class="col-md-4" ng-repeat="s in software">
+            <div class="card w-80 h-70">
+                <img class="card-img-top" ng-src="{{s.thumbnailUrl}}" alt="{{s.title}}">
+                <div class="card-body">
+                    <p class="card-title text-primary font-weight-bold text-capitalize">{{s.title}}</p>
+                    <span class="badge badge-pill badge-danger">{{s.categories[0]}}</span>
+                    <span class="badge badge-pill badge-dark">{{s.categories[1]}}</span>
+                    <p class="card-text lead">{{s.authors[0]}}</p>
+                    <button href="#" class="btn btn-warning rounded-circle" ng-click="addBook(s)"><i
+                            class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="microsoftChecked">
+        <div class="col-md-4" ng-repeat="m in microsoft">
+            <div class="card w-80 h-70">
+                <img class="card-img-top" ng-src="{{m.thumbnailUrl}}" alt="{{m.title}}">
+                <div class="card-body">
+                    <p class="card-title text-primary font-weight-bold text-capitalize">{{m.title}}</p>
+                    <span class="badge badge-pill badge-danger">{{m.categories[0]}}</span>
+                    <span class="badge badge-pill badge-dark">{{m.categories[1]}}</span>
+                    <p class="card-text lead">{{m.authors[0]}}</p>
+                    <button href="#" class="btn btn-warning rounded-circle" ng-click="addBook(m)"><i
+                            class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="otherChecked">
+        <div class="col-md-4" ng-repeat="o in others">
+            <div class="card w-80 h-70">
+                <img class="card-img-top" ng-src="{{o.thumbnailUrl}}" alt="{{o.title}}">
+                <div class="card-body">
+                    <p class="card-title text-primary font-weight-bold text-capitalize">{{o.title}}</p>
+                    <span class="badge badge-pill badge-danger">{{o.categories[0]}}</span>
+                    <span class="badge badge-pill badge-dark">{{o.categories[1]}}</span>
+                    <p class="card-text lead">{{o.authors[0]}}</p>
+                    <button href="#" class="btn btn-warning rounded-circle" ng-click="addBook(o)"><i
+                            class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
